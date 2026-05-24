@@ -1,0 +1,115 @@
+{
+  "summary": {
+    "total": 10,
+    "average": 5.0,
+    "distribution": {
+      "5": 10,
+      "4": 0,
+      "3": 0,
+      "2": 0,
+      "1": 0
+    }
+  },
+  "reviews": [
+    {
+      "userName": "Jorge  G.",
+      "rating": 5,
+      "date": "1 month ago",
+      "comment": "Muy buena experiencia. El negocio se llama así, si es beneficioso para ambas partes, y pienso que así ha sido. Extraordinario trato con Vicente.",
+      "carTitle": "iPhone 17 Air 512 GB Nuevo Sin Abrir",
+      "wallapopUrl": "https://es.wallapop.com/item/iphone-17-air-512-gb-nuevo-sin-abrir-1249974769",
+      "userAvatar": "https://cdn.wallapop.com/images/13/15/we/__/c13p70375760/i494586299.jpg?pictureSize=W320",
+      "carImage": "https://cdn.wallapop.com/images/10420/ko/7a/__/c10420p1249974769/i6418916768.jpg?pictureSize=W320"
+    },
+    {
+      "userName": "Emanuel P.",
+      "rating": 5,
+      "date": "1 month ago",
+      "comment": "Perfecto, gracias!",
+      "carTitle": "Samsung Galaxy A26 5G 128GB Negro",
+      "wallapopUrl": "https://es.wallapop.com/item/samsung-galaxy-a26-5g-128gb-negro-1249971477",
+      "userAvatar": "https://cdn.wallapop.com/images/13/1i/q3/__/c13p91917261/i3275605679.jpg?pictureSize=W320",
+      "carImage": "https://cdn.wallapop.com/images/10420/ko/78/__/c10420p1249971477/i6418893618.jpg?pictureSize=W320"
+    },
+    {
+      "userName": "Jose N.",
+      "rating": 5,
+      "date": "4 months ago",
+      "comment": "Muy recomendable",
+      "carTitle": "iPad Air 11 WiFi 128GB M3",
+      "wallapopUrl": "https://es.wallapop.com/item/ipad-air-11-wifi-128gb-m3-1214483025",
+      "userAvatar": "https://cdn.wallapop.com/images/13/0t/og/__/c13p49849920/i3610953358.jpg?pictureSize=W320",
+      "carImage": "https://cdn.wallapop.com/images/10420/k3/2l/__/c10420p1214483025/i6188915305.jpg?pictureSize=W320"
+    },
+    {
+      "userName": "Jose  M.",
+      "rating": 5,
+      "date": "4 months ago",
+      "comment": "Muy formal, envío rapidisimo",
+      "carTitle": "iPhone 17 Pro Max 512GB Naranja Precintado",
+      "wallapopUrl": "https://es.wallapop.com/item/iphone-17-pro-max-512gb-naranja-precintado-1214491540",
+      "userAvatar": "https://cdn.wallapop.com/images/13/0q/dc/__/c13p44292405/i474353203.jpg?pictureSize=W320",
+      "carImage": "https://cdn.wallapop.com/images/10420/k3/2r/__/c10420p1214491540/i6189036276.jpg?pictureSize=W320"
+    },
+    {
+      "userName": "Cipriano Y.",
+      "rating": 5,
+      "date": "4 months ago",
+      "comment": "Buen trato y todo genial",
+      "carTitle": "iPhone 16 Pro Max 512 GB",
+      "wallapopUrl": "https://es.wallapop.com/item/iphone-16-pro-max-512-gb-1215569368",
+      "userAvatar": "https://cdn.wallapop.com/images/13/10/kf/__/c13p61419853/i869686359.jpg?pictureSize=W320",
+      "carImage": "https://cdn.wallapop.com/images/10420/k3/pv/__/c10420p1215569368/i6196881446.jpg?pictureSize=W320"
+    },
+    {
+      "userName": "Manuel G.",
+      "rating": 5,
+      "date": "4 months ago",
+      "comment": "Vicente es una maravilla de persona!!! Gracias por todo!!!",
+      "carTitle": "Samsung Galaxy S25 128GB Precintado",
+      "wallapopUrl": "https://es.wallapop.com/item/samsung-galaxy-s25-128gb-precintado-1213714420",
+      "userAvatar": "",
+      "carImage": "https://cdn.wallapop.com/images/10420/k2/m4/__/c10420p1213714420/i6183243998.jpg?pictureSize=W320"
+    },
+    {
+      "userName": "E M.",
+      "rating": 5,
+      "date": "6 months ago",
+      "comment": "Todo perfecto, recomendable 100x100",
+      "carTitle": "iPhone 15 Plus 128 GB Rosa",
+      "wallapopUrl": "https://es.wallapop.com/item/iphone-15-plus-128-gb-rosa-1188320649",
+      "userAvatar": "https://cdn.wallapop.com/images/13/06/ax/__/c13p10588132/i3145794911.jpg?pictureSize=W320",
+      "carImage": "https://cdn.wallapop.com/images/10420/jn/hu/__/c10420p1188320649/i6003718905.jpg?pictureSize=W320"
+    },
+    {
+      "userName": "Edu F.",
+      "rating": 5,
+      "date": "6 months ago",
+      "comment": "Excelente vendedor, producto nuevo y en perfectas condiciones. Recomendable 100%",
+      "carTitle": "Samsung Galaxy A56 5G 256GB Precintado",
+      "wallapopUrl": "https://es.wallapop.com/item/samsung-galaxy-a56-5g-256gb-precintado-1188911623",
+      "userAvatar": "https://cdn.wallapop.com/images/13/2p/1r/__/c13p163004722/i719896230.jpg?pictureSize=W320",
+      "carImage": "https://cdn.wallapop.com/images/10420/jn/ui/__/c10420p1188911623/i6006953660.jpg?pictureSize=W320"
+    },
+    {
+      "userName": "Vicente  N.",
+      "rating": 5,
+      "date": "1 year ago",
+      "comment": "Todo bien",
+      "carTitle": "SAMSUNG GALAXY TAB A9 PLUS NUEVA",
+      "wallapopUrl": "https://es.wallapop.com/item/samsung-galaxy-tab-a9-plus-nueva-1069995165",
+      "userAvatar": "https://cdn.wallapop.com/images/13/0v/52/__/c13p52305186/i1040338851.jpg?pictureSize=W320",
+      "carImage": "https://cdn.wallapop.com/images/10420/hp/1p/__/c10420p1069995165/i5243178702.jpg?pictureSize=W320"
+    },
+    {
+      "userName": "David L.",
+      "rating": 5,
+      "date": "1 year ago",
+      "comment": "",
+      "carTitle": "SAMSUNG GALAXY TAB A9 PLUS 64 GB",
+      "wallapopUrl": "https://es.wallapop.com/item/samsung-galaxy-tab-a9-plus-64-gb-1062401367",
+      "userAvatar": "https://cdn.wallapop.com/images/13/0r/w8/__/c13p46853375/i1985892590.jpg?pictureSize=W320",
+      "carImage": "https://cdn.wallapop.com/images/10420/hk/iy/__/c10420p1062401367/i5197301306.jpg?pictureSize=W320"
+    }
+  ]
+}

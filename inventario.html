@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario | Coches de Ocasión Madrid | VICENTE (.</title>
+    <meta name="description"
+        content="Explora nuestro catálogo completo de coches de segunda mano en 28001 Madrid. Filtra por marca, precio y características para encontrar tu coche ideal.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <!-- JS -->
+    <script src="js/seo.js"></script>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://webcochesegundamano.github.io/vicente//inventario.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Inventario | Coches de Ocasión Madrid | VICENTE (.">
+    <meta property="og:description"
+        content="Explora nuestro catálogo completo de coches de segunda mano en 28001 Madrid. Filtra por marca, precio y características para encontrar tu coche ideal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://webcochesegundamano.github.io/vicente//inventario.html">
+    <meta property="og:image" content="https://webcochesegundamano.github.io/vicente//img/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.js"></script>
+</head>
+
+<body class="bg-secondary">
+
+    <!-- Header (same as index.html) -->
+    <header class="main-header scrolled" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="VICENTE (.">
+            </a>
+            <span class="header-title">VICENTE (.</span>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="inventario.html" class="nav-link active">Inventario</a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    <li class="nav-theme-item">
+                        <button class="nav-theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                            <i data-lucide="moon"></i>
+                            <span class="theme-label" id="theme-label">Modo Oscuro</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <button class="theme-toggle theme-toggle-desktop" id="theme-toggle-desktop" aria-label="Cambiar tema"><i
+                    data-lucide="moon"></i></button>
+            <button class="mobile-menu-toggle" id="menu-toggle"><i data-lucide="menu"></i></button>
+        </div>
+    </header>
+
+    <main class="py-xl">
+        <div class="container">
+            <h1 class="text-center" style="margin-bottom: 3rem;">Nuestro <span class="text-accent">Inventario</span>
+            </h1>
+
+            <div class="inventory-layout"
+                style="display: grid; grid-template-columns: 280px 1fr; gap: var(--space-lg);">
+                <!-- Sidebar Filters -->
+                <aside class="sidebar-filters glass"
+                    style="padding: 2rem; position: sticky; top: 100px; height: fit-content; border-color: rgba(255,255,255,0.05);">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 0;">Filtros</h3>
+                        <button id="reset-filters"
+                            style="font-size: 0.8rem; color: var(--accent-primary); font-weight: 500;">Limpiar</button>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="filter-group" style="margin-bottom: 1.5rem;">
+                        <label
+                            style="display: block; font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--text-muted);">Buscar
+                            por modelo</label>
+                        <input type="text" id="search-input" placeholder="Ej: Focus, Audi..."
+                            style="width: 100%; background: var(--bg-primary); border: 1px solid var(--glass-border); padding: 0.75rem; border-radius: 6px; color: white;">
+                    </div>
+
+                    <!-- Brand -->
+                    <div class="filter-group" style="margin-bottom: 1.5rem;">
+                        <label
+                            style="display: block; font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--text-muted);">Marca</label>
+                        <select id="brand-filter"
+                            style="width: 100%; background: var(--bg-primary); border: 1px solid var(--glass-border); padding: 0.75rem; border-radius: 6px; color: white;">
+                            <option value="">Todas</option>
+                        </select>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="filter-group" style="margin-bottom: 1.5rem;">
+                        <label
+                            style="display: block; font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--text-muted);">Precio
+                            Máx: <span id="price-val" class="text-accent">30.000€</span></label>
+                        <input type="range" id="price-range" min="0" max="30000" step="500" value="30000"
+                            style="width: 100%; accent-color: var(--accent-primary);">
+                    </div>
+
+                    <!-- Transmisson -->
+                    <div class="filter-group" style="margin-bottom: 1.5rem;">
+                        <label
+                            style="display: block; font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--text-muted);">Transmisión</label>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <button class="filter-chip active" data-type="transmission" data-val="">Cualquiera</button>
+                            <button class="filter-chip" data-type="transmission" data-val="Manual">Manual</button>
+                            <button class="filter-chip" data-type="transmission" data-val="Automatico">Auto</button>
+                        </div>
+                    </div>
+
+                    <!-- Show Sold -->
+                    <div class="filter-group">
+                        <label
+                            style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-muted); cursor: pointer;">
+                            <input type="checkbox" id="show-sold" style="accent-color: var(--accent-primary);">
+                            Mostrar vendidos
+                        </label>
+                    </div>
+                </aside>
+
+                <!-- Grid & Sort -->
+                <div class="inventory-content">
+                    <div class="flex justify-between items-center" style="margin-bottom: 2rem;">
+                        <div id="results-count" class="text-muted">Mostrando 0 coches</div>
+                        <div class="flex items-center gap-sm">
+                            <span style="font-size: 0.85rem;" class="text-muted">Ordenar por:</span>
+                            <select id="sort-order"
+                                style="background: transparent; border: 1px solid var(--glass-border); padding: 0.5rem; border-radius: 6px; color: white;">
+                                <option value="price-asc">Precio: de menor a mayor</option>
+                                <option value="price-desc">Precio: de mayor a menor</option>
+                                <option value="year-desc">Año: más recientes</option>
+                                <option value="km-asc">KM: de menor a mayor</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="cars-grid" class="cards-grid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" style="background: var(--bg-primary);">
+        <div class="container text-center py-md" style="border-top: 1px solid var(--glass-border);">
+            <p>&copy; Todos los derechos reservados</p>
+            <p><a href="#">Aviso Legal</a> | <a href="#">Privacidad</a></p>
+            <p>&copy; 2026 LittleBug</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/34653309133" class="whatsapp-fixed" target="_blank"><i data-lucide="message-circle"></i></a>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+    <script src="js/cars.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

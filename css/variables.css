@@ -1,0 +1,64 @@
+:root {
+  /* Dark Theme (default) - Rojo Premium */
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #262626;
+
+  --accent-primary: #E63946;
+  --accent-primary-hover: #DC2626;
+  --accent-secondary: #f8fafc;
+  --accent-glow: rgba(230, 57, 70, 0.3);
+  --header-scrolled: rgba(15, 15, 15, 0.85);
+
+  --text-main: #f8fafc;
+  --text-muted: #9ca3af;
+
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  --success: #10b981;
+  --danger: #E63946;
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+
+  /* Typography */
+  --font-main: 'Inter', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  /* Effects */
+  --br-sm: 8px;
+  --br-md: 16px;
+  --br-lg: 24px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-tertiary: #e2e8f0;
+
+  --accent-primary: #DC2626;
+  --accent-primary-hover: #B91C1C;
+  --accent-secondary: #DC2626;
+  --accent-glow: rgba(220, 38, 38, 0.15);
+  --header-scrolled: rgba(248, 250, 252, 0.85);
+
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+
+  --glass-bg: rgba(0, 0, 0, 0.03);
+  --glass-border: rgba(0, 0, 0, 0.08);
+
+  --danger: #DC2626;
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}

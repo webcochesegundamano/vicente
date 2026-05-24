@@ -1,0 +1,43 @@
+name: Update Inventory
+
+on:
+  schedule:
+    # 4:00 AM UTC = 6:00 AM CEST (horario de verano España)
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run inventory updater
+        run: python scripts/update-inventory.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "autos-sanchez-bot"
+          git config user.email "bot@autossanchezguerrero.com"
+          git add data/inventory.json sitemap.xml data/sold_ids.txt data/reviews.json img/cars/
+          if git diff --cached --quiet; then
+            echo "No hay cambios que commitar"
+          else
+            git commit -m "chore: daily inventory update [skip ci]"
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+            git push
+          fi

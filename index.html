@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VICENTE (. | Coches de Segunda Mano en 28001 Madrid</title>
+    <meta name="description"
+        content="Compraventa de coches de segunda mano en 28001 Madrid. Vehículos revisados con la mejor relación calidad-precio. Tu próximo coche te espera en VICENTE (..">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <!-- JS -->
+    <script src="js/seo.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.js"></script>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://webcochesegundamano.github.io/vicente//">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="VICENTE (. | Coches de Segunda Mano en 28001 Madrid">
+    <meta property="og:description"
+        content="Compraventa de coches de segunda mano en 28001 Madrid. Vehículos revisados con la mejor relación calidad-precio. Tu próximo coche te espera en VICENTE (..">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://webcochesegundamano.github.io/vicente//">
+    <meta property="og:image" content="https://webcochesegundamano.github.io/vicente//img/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="VICENTE (.">
+            </a>
+            <span class="header-title">VICENTE (.</span>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="inventario.html" class="nav-link">Inventario</a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    <li class="nav-theme-item">
+                        <button class="nav-theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                            <i data-lucide="moon"></i>
+                            <span class="theme-label" id="theme-label">Modo Oscuro</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle theme-toggle-desktop" id="theme-toggle-desktop" aria-label="Cambiar tema">
+                <i data-lucide="moon"></i>
+            </button>
+            <button class="mobile-menu-toggle" id="menu-toggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Premium Hero Section -->
+    <section class="hero-premium" id="hero-premium">
+        <div class="hero-premium-bg" id="hero-bg">
+            <div class="hero-premium-overlay"></div>
+            <div class="hero-premium-gradient"></div>
+            <img id="hero-car-image" src="" alt="Vehículo Premium" class="hero-premium-img">
+        </div>
+
+        <div class="container hero-premium-content">
+            <p class="hero-premium-tagline" id="hero-tagline">Tu próximo coche te espera</p>
+            <div class="hero-premium-badge">
+                <span class="badge-shimmer">VEHÍCULO PREMIUM</span>
+            </div>
+
+            <h1 class="hero-premium-title">
+                <span class="hero-premium-brand" id="hero-brand"></span>
+                <span class="hero-premium-model" id="hero-model"></span>
+            </h1>
+
+            <div class="hero-premium-specs" id="hero-specs">
+                <div class="spec-chip">
+                    <i data-lucide="calendar" style="width:16px"></i>
+                    <span id="hero-year"></span>
+                </div>
+                <div class="spec-chip">
+                    <i data-lucide="gauge" style="width:16px"></i>
+                    <span id="hero-km"></span>
+                </div>
+                <div class="spec-chip">
+                    <i data-lucide="fuel" style="width:16px"></i>
+                    <span id="hero-fuel"></span>
+                </div>
+                <div class="spec-chip">
+                    <i data-lucide="settings" style="width:16px"></i>
+                    <span id="hero-transmission"></span>
+                </div>
+            </div>
+
+            <div class="hero-premium-price">
+                <div class="price-original-row">
+                    <span class="price-original" id="hero-price-original"></span>
+                    <span class="price-save-badge" id="hero-save-badge"></span>
+                </div>
+                <div class="price-current-row">
+                    <span class="price-amount" id="hero-price-value">0</span>
+                    <span class="price-amount" id="hero-price-value">€</span>
+                </div>
+            </div>
+
+            <div class="hero-premium-actions">
+                <a href="" id="hero-car-link" class="btn btn-premium">
+                    <i data-lucide="eye" style="width:18px"></i> Ver este vehículo
+                </a>
+                <a href="https://wa.me/34653309133" id="hero-whatsapp" class="btn btn-premium-outline">
+                    <i data-lucide="message-circle" style="width:18px"></i> Preguntar por WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Descubre más</span>
+        </div>
+    </section>
+
+    <!-- Featured Cars -->
+    <section class="py-lg">
+        <div class="container">
+            <div class="section-title reveal">
+                <div>
+                    <h2>Vehículos <span class="text-accent">Destacados</span></h2>
+                    <p>Nuestras mejores ofertas seleccionadas para ti esta semana.</p>
+                </div>
+                <a href="inventario.html" class="btn btn-outline btn-sm">Ver Todo <i data-lucide="arrow-right"
+                        style="width:12px"></i></a>
+            </div>
+
+            <div id="featured-cars-grid" class="cards-grid">
+                <div class="text-center py-md">Cargando ofertas...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-lg" style="background: var(--bg-secondary);">
+        <div class="container text-center">
+            <div class="section-title reveal"
+                style="flex-direction: column; align-items: center; text-align: center; margin-bottom: 4rem;">
+                <h3>¿Por qué elegir</h3>
+                <h2 style="font-size: 1.7em;"><span class="text-accent">VICENTE (.</span>?</h2>
+                <!-- <p>Más que un concesionario, somos tu taller de confianza en Madrid.</p> -->
+            </div>
+
+            <div class="grid grid-cols-12 gap-md"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="feature-card glass reveal stagger-1">
+                    <div class="feature-icon"><i data-lucide="check-circle-2"></i></div>
+                    <h3>Calidad Garantizada</h3>
+                    <p>Cada vehículo pasa una inspección técnica rigurosa antes de ser puesto a la venta.</p>
+                </div>
+
+                <div class="feature-card glass reveal stagger-2">
+                    <div class="feature-icon"><i data-lucide="trending-down"></i></div>
+                    <h3>Precios Competitivos</h3>
+                    <p>Mantenemos los márgenes ajustados para ofrecerte el mejor precio de toda la región.</p>
+                </div>
+
+                <div class="feature-card glass reveal stagger-3">
+                    <div class="feature-icon"><i data-lucide="users"></i></div>
+                    <h3>Trato Personalizado</h3>
+                    <p>Te asesoramos en cada paso para que encuentres el coche que realmente necesitas.</p>
+                </div>
+
+                <div class="feature-card glass reveal stagger-4">
+                    <div class="feature-icon"><i data-lucide="shield"></i></div>
+                    <h3>Transparencia Total</h3>
+                    <p>Kilómetraje certificado y toda la documentación lista para transferir sin sorpresas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-xl">
+        <div class="container">
+            <div class="glass reveal"
+                style="padding: 3rem; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem; border-color: var(--accent-primary);">
+                <!-- <div class="text-center">
+                    <h2 style="font-size: 3rem; color: var(--accent-primary); margin-bottom: 0;" class="counter"
+                        data-target="20">0+</h2>
+                    <p class="text-muted">Años de Experiencia</p>
+                </div> -->
+                <div class="text-center">
+                    <h2 style="font-size: 3rem; margin-bottom: 0;" class="counter" data-target="35">0+</h2>
+                    <p class="text-muted">Vehículos Vendidos</p>
+                </div>
+                <div class="text-center">
+                    <h2 style="font-size: 3rem; margin-bottom: 0;" class="counter" data-target="100">0%</h2>
+                    <p class="text-muted">Clientes Satisfechos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="py-xl" id="reviews-section" style="padding-top: 0; padding-bottom: 0;">
+        <div class="container">
+            <div class="section-title reveal"
+                style="text-align: center; justify-content: center; margin-bottom: 1.5rem;">
+                <div>
+                    <p class="text-accent" style="font-weight: 600; margin-bottom: 0.5rem;">Valoraciones</p>
+                    <h2 style="font-size: 1.2em;">Lo que dicen nuestros clientes</h2>
+                </div>
+            </div>
+            <div id="reviews-summary" class="reviews-summary" style="margin-bottom: 2rem;">
+                <div class="reviews-average-rating">
+                    <span class="reviews-average-number" id="reviews-average">5.0</span>
+                    <div class="reviews-stars" id="reviews-stars-summary"></div>
+                    <span class="reviews-count" id="reviews-count">(35 valoraciones)</span>
+                </div>
+            </div>
+
+            <div id="reviews-carousel" class="reviews-carousel">
+                <div class="reviews-track" id="reviews-track">
+                    <div class="reviews-loading">
+                        <div class="reviews-skeleton"></div>
+                        <div class="reviews-skeleton"></div>
+                        <div class="reviews-skeleton"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center reveal" style="margin-top: 2rem;">
+                <a href="https://es.wallapop.com/user/9nz0mgov1vjo/reviews" target="_blank" class="btn btn-outline">
+                    Ver todas en Wallapop <i data-lucide="external-link" style="width:14px"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo-text" style="font-size: 1.7rem; margin-bottom: 1.5rem;">VICENTE (.</div>
+                <p class="text-muted" style="font-size: 0.9rem;">Tu compraventa de confianza en 28001 Madrid.
+                    Especialistas en vehículos de ocasión con revisión mecánica completa.</p>
+                <div class="social-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                    <!-- <a href="#" class="feature-icon" style="width: 40px; height: 40px; font-size: 1rem;"><i
+                            data-lucide="facebook"></i></a>
+                    <a href="#" class="feature-icon" style="width: 40px; height: 40px; font-size: 1rem;"><i
+                            data-lucide="instagram"></i></a> -->
+                    <a href="https://es.wallapop.com/user/9nz0mgov1vjo" target="_blank" class="feature-icon"
+                        style="width: 40px; height: 40px; font-size: 1rem;" title="Síguenos en Wallapop">
+                        <i data-lucide="shopping-bag"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inventario.html">Ver Inventario</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul class="contact-info">
+                    <li><i data-lucide="map-pin"></i> Valencia</li>
+                    <li><i data-lucide="phone"></i> +34 653 309 133</li>
+                    <li><i data-lucide="mail"></i> vicente@gmail.com</li>
+                    <li><i data-lucide="clock"></i> L-S: 9:00-19:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; Todos los derechos reservados</p>
+            <p><a href="#">Aviso Legal</a> | <a href="#">Privacidad</a></p>
+            <p>&copy; 2026 LittleBug</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/34653309133" class="whatsapp-fixed" target="_blank">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

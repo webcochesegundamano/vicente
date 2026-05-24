@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://webcochesegundamano.github.io/vicente//sitemap.xml

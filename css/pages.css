@@ -1,0 +1,70 @@
+/* Pages Specific Styles */
+
+/* Inventory Page */
+.inventory-layout {
+    margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+    .inventory-layout {
+        grid-template-columns: 1fr !important;
+    }
+    .sidebar-filters {
+        position: relative !important;
+        top: 0 !important;
+        margin-bottom: 2rem;
+    }
+}
+
+.filter-chip {
+    padding: 0.5rem 1rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-chip.active {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+}
+
+.filter-chip:hover:not(.active) {
+    border-color: var(--accent-primary);
+}
+
+/* Range input styling (simple version) */
+input[type=range] {
+    height: 4px;
+    width: 100%;
+}
+
+/* Detail Page Customizations */
+@media (max-width: 768px) {
+    .car-detail-sidebar {
+        grid-column: 1 / -1;
+    }
+    .car-detail-main {
+        grid-column: 1 / -1;
+    }
+}
+
+.main-img-container {
+    height: 500px;
+}
+
+.main-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .main-img-container {
+        height: 350px;
+    }
+}

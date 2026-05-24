@@ -1,0 +1,13 @@
+{
+  "_comment": "Copia este fichero como config.json y rellena los datos",
+  "wallapop_user_id": "9nz0mgov1vjo",
+  "site": {
+    "name": "VICENTE (.",
+    "domain": "https://webcochesegundamano.github.io/vicente/",
+    "phone": "+34 653 309 133",
+    "email": "vicente@gmail.com",
+    "address": "Valencia",
+    "latitude": 39.4699,
+    "longitude": -0.3763
+  }
+}
